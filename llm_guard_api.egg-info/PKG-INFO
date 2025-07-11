@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: llm-guard-api
+Version: 0.0.10
+Summary: LLM Guard API is a deployment of LLM Guard as an API.
+Author-email: Protect AI <community@protectai.com>
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: <3.13,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: asyncio==3.4.3
+Requires-Dist: fastapi==0.115.12
+Requires-Dist: llm-guard==0.3.16
+Requires-Dist: pydantic==2.11.4
+Requires-Dist: pyyaml==6.0.2
+Requires-Dist: uvicorn[standard]==0.34.2
+Requires-Dist: structlog>=24
+Requires-Dist: slowapi==0.1.9
+Requires-Dist: opentelemetry-instrumentation-fastapi==0.54b1
+Requires-Dist: opentelemetry-api==1.33.1
+Requires-Dist: opentelemetry-sdk==1.33.1
+Requires-Dist: opentelemetry-exporter-otlp-proto-http==1.33.1
+Requires-Dist: opentelemetry-exporter-prometheus==0.54b1
+Requires-Dist: opentelemetry-sdk-extension-aws==2.1.0
+Requires-Dist: opentelemetry-propagator-aws-xray==1.0.2
+Requires-Dist: psutil>=5.9
+Provides-Extra: cpu
+Requires-Dist: llm-guard[onnxruntime]==0.3.16; extra == "cpu"
+Provides-Extra: gpu
+Requires-Dist: llm-guard[onnxruntime-gpu]==0.3.16; extra == "gpu"
+
+# LLM Guard API
+
+[Documentation](https://protectai.github.io/llm-guard/api/overview/)
